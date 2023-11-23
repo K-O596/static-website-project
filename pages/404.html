@@ -1,0 +1,26 @@
+<style>
+    /* チェックボックスを非表示にする */
+    #toggleCheckbox {
+      display: none;
+    }
+
+    /* 画像を初めは非表示にする */
+    #hiddenImage {
+      display: none;
+    }
+
+    /* チェックボックスがチェックされたとき、画像を表示する */
+    #toggleCheckbox:checked + #hiddenImage {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <label for="toggleCheckbox">Click to Show Image</label>
+  <input type="checkbox" id="toggleCheckbox">
+  <img id="hiddenImage" src="your-image-url.jpg" alt="Hidden Image">
+</body>
+
+この例では、<input type="checkbox" id="toggleCheckbox">がクリックされると、
+その後の #toggleCheckbox:checked + #hiddenImage のセレクタでスタイルが変更され、画像が表示されます。
+ラベル (<label>)は for 属性を使って、ユーザーがクリックすると対応するチェックボックスがトグルされるようにしています。
