@@ -5,128 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KSgame</title>
     <link rel="stylesheet"href="./css/main.css">
-    <link rel="stylesheet"href="./css/mario.css">
+    <link rel="stylesheet"href="./css/mario3.css">
     <link rel="stylesheet"href="./css/news.css">
+
+    <style>
+            #toby-fox:hover {
+                content: url('./img/Temmie_Sprite.webp');
+            }
+    </style>
+
+    <noscript>
+        <style>
+            .pipe-box:hover .mario{
+                transform: translate(0px,0px);
+            }
+            .pipe-box:active .mario{
+                transform: translate(0px,-195px);
+                z-index: 1;
+            }
+        </style>
+    </noscript>
+
 </head>
 <body>
-    <div class="nav bkblue">
-        <span class="menu">
-            <a href="#">Game</a>
-            <a href="./pages/meach.html">Meach</a>
-            <a href="./pages/gallery.html">Gallery</a>
-            <a href="./pages/faq.html">FAQ/Contant</a>
-        </span>
-    </div>
-
-    <div class="blurred-background">
-        <div class="pipe-box">
-            <img class="mario" src="./img/201911241201482.png">
-            <img class="pipe" src="./img/pipe.png">
+    <nav>
+        <div class="nav bkblue">
+            <span class="menu">
+                <a href="#">Game</a>
+                <a href="./pages/meach.html">Meach</a>
+                <a href="./pages/gallery.html">Gallery</a>
+                <a href="./pages/faq.html">FAQ</a>
+            </span>
         </div>
-    </div>
+    </nav>
 
-    <h1>
-        News and Updates
-    </h1>
-    
-        <main>
-            <div class="news-box">
+    <header>
+        <div class="blurred-background">
+            <div class="pipe-box" id="pipe" >
+                <img class="mario" id="randomImage" src="./img/201911241201482.png" alt="Random Image">
+                <img class="pipe" src="./img/pipe.png">
+            </div>
+            <script src="./js/game2.js"></script>
+        </div>
+    </header>
 
-                <div class="news-box-container">
-                    <a href="https://www.nintendo.com/us/store/products/super-mario-rpg-switch/">
-                        <img src="./img/2019112412014822.png">
-                    </a>
-                    <strong> Mario RPG Released!</strong>
-                </div>
+    <main>
+        <h1>
+            News and Updates
+        </h1>
+        
+        <div class="news-box">
+            <div class="news-box-container">
+                <a href="https://www.youtube.com/watch?v=mZTVPV1RxOs">
+                    <img src="./img/gundam_screenshot.jpg">
+                </a>
+                <strong> Live action Gundam Movie is Coming!</strong>
+            </div>
 
-                <div class="news-box-container">
-                    <a href="https://https://www.fromsoftware.jp/jp/news/detail_230926_1.html">
-                        <img src="./img/Sekiro.png">
-                    </a>
-                    <strong> Sekiro Hits 10 Million Sales Milestone - A Gaming Triumph!</strong>
-                </div>
-                
-                <div class="news-box-container">
-                    <a href="https://https://https://en.bandainamcoent.eu/armored-core/armored-core-vi-fires-of-rubicon">
-                        <img src="./img/Armored-Core-6.png">
-                    </a>
-                    <strong> Armored Core 6 Released!</strong>
-                </div>
+            <div class="news-box-container">
+                <a href="https://https://www.fromsoftware.jp/jp/news/detail_230926_1.html">
+                    <img src="./img/Sekiro.png">
+                </a>
+                <strong> Sekiro Hits 10 Million Sales Milestone - A Gaming Triumph!</strong>
+            </div>
+                    
+            <div class="news-box-container">
+                <a href="https://https://https://en.bandainamcoent.eu/armored-core/armored-core-vi-fires-of-rubicon">
+                    <img src="./img/Armored-Core-6.png">
+                </a>
+                <strong> Armored Core 6 Released!</strong>
+            </div>
 
-                <div class="news-box-container">
-                    <a href="https://steinsgate.jp/15th/event/radiokaikan/">
-                        <img src="./img/Steins-Gate.png">
-                    </a>
-                    <strong>Steins;Gate 15th Anniversary Celebration Concludes</strong>
-                </div>
+            <div class="news-box-container">
+                <a href="https://steinsgate.jp/15th/event/radiokaikan/">
+                    <img src="./img/Steins-Gate.png">
+                </a>
+                <strong>Steins;Gate 15th Anniversary Celebration Concludes</strong>
+            </div>
+        </div>
+        
+        <h1>
+            Products
+        </h1>
+
+        <div class="news-box">
+            <div class="news-box-container">
+                <a href="https://www.nintendo.co.jp/n08/a2uj/mother2/index.html">
+                    <img src="./img/mother-2-at-30-header-696x509.jpg">
+                </a>
+                <strong> Mother 2</strong>
+            </div>
+
+            <div class="news-box-container">
+                <a href="https://www.nintendo.com/us/store/products/super-mario-rpg-switch/">
+                    <img src="./img/2019112412014822.png">
+                </a>
+                <strong> Surper Mario RPG</strong>
+            </div>
+
+            <div class="news-box-container">
+                <a href="https://www.playstation.com/ja-jp/games/sekiro-shadows-die-twice/">
+                    <img src="./img/Sekiro.png">
+                </a>
+                <strong> Sekiro Shadows die twice</strong>
+            </div>
+            
+            <div class="news-box-container">
+                <a href="https://https://https://en.bandainamcoent.eu/armored-core/armored-core-vi-fires-of-rubicon">
+                    <img src="./img/main_s.jpg">
+                </a>
+                <strong> Armored Core 6</strong>
+            </div>
+        </div>
+
+        <div class="news-box">
+            <div class="news-box-container">
+                <a href="https://www.konami.com/mg/archive/mgs_pw/">
+                    <img src="./img/download (7).jpg">
+                </a>
+                <strong> Metal Gear Solid Peace Walker</strong>
+            </div>
+
+            <div class="news-box-container">
+                <a href="https://undertale.com/">
+                    <img src="./img/download (8).jpg">
+                </a>
+                <strong> Undertale</strong>
+            </div>
+
+            <div class="news-box-container">
+                <a href="https://aquaplus.jp/uta/oro/">
+                    <img src="./img/715LDhXAZKL.jpg">
+                </a>
+                <strong>Utawarerumono</strong>
+            </div>
+            
+            <div class="news-box-container">
+                <a href="https://segaretro.org/Mega_Man_X4">
+                    <img src="./img/Mega_Man_X4_PSX.jpg">
+                </a>
+                <strong> Mega Man X4</strong>
 
             </div>
-        </main>
-    
-    <h1>
-        Products
-    </h1>
-    <div class="news-box">
-        <div class="news-box-container">
-            <a href="https://www.nintendo.co.jp/n08/a2uj/mother2/index.html">
-                <img src="./img/mother-2-at-30-header-696x509.jpg">
-            </a>
-            <strong> Mother 2</strong>
         </div>
-
-        <div class="news-box-container">
-            <a href="https://www.nintendo.com/us/store/products/super-mario-rpg-switch/">
-                <img src="./img/2019112412014822.png">
-            </a>
-            <strong> Surper Mario RPG</strong>
-        </div>
-
-        <div class="news-box-container">
-            <a href="https://www.playstation.com/ja-jp/games/sekiro-shadows-die-twice/">
-                <img src="./img/Sekiro.png">
-            </a>
-            <strong> Sekiro Shadows die twice</strong>
-        </div>
-        
-        <div class="news-box-container">
-            <a href="https://https://https://en.bandainamcoent.eu/armored-core/armored-core-vi-fires-of-rubicon">
-                <img src="./img/main_s.jpg">
-            </a>
-            <strong> Armored Core 6</strong>
-        </div>
-    </div>
-
-    <div class="news-box">
-        <div class="news-box-container">
-            <a href="">
-                <img src="./img/download (7).jpg">
-            </a>
-            <strong> Metal Gear Solid Peace Walker</strong>
-        </div>
-
-        <div class="news-box-container">
-            <a href="">
-                <img src="./img/download (8).jpg">
-            </a>
-            <strong> Undertale</strong>
-        </div>
-
-        <div class="news-box-container">
-            <a href="">
-                <img src="./img/715LDhXAZKL.jpg">
-            </a>
-            <strong>Utawarerumono</strong>
-        </div>
-        
-        <div class="news-box-container">
-            <a href="">
-                <img src="./img/Mega_Man_X4_PSX.jpg">
-            </a>
-            <strong> Mega Man X4</strong>
-        </div>
-    </div>
+    </main>
 
     <footer class="white bkblack">
+        <span>Contact us</span><br>
+        <span style="display: block; font-size: 20px;">mail:2iroquoispliskin@gmail.com</span>
+        <a href="">
+            <img style="display: inline;" class="icon" src="./img/twitter.png">
+        </a>
+        <a href="">
+            <img style="display: inline;" class="icon" src="./img/download (12).jpg">
+        </a>
+
+        <img style="display: inline-block;" class="icon" id="toby-fox" src="./img/toby-fox.gif">
+        
+
         <p>Nintendo Switch is a trademark of Nintendo. "PlayStation" and the "PS" Family logo are registered trademarks and "PS4" is a trademark of Sony Interactive Entertainment LLC.</p>
 
         <p>Privacy Policy</p>

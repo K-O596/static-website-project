@@ -1,26 +1,40 @@
-<style>
-    /* チェックボックスを非表示にする */
-    #toggleCheckbox {
-      display: none;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404</title>
+  
+  <!-- <style>
+    #err {
+      display:block;
+      width: 100%;
+      height: 100%;
     }
 
-    /* 画像を初めは非表示にする */
-    #hiddenImage {
-      display: none;
+    .bg {
+      background-image: url('../img/HTML-404-Page-with-SVG.png');
+      backdrop-filter: blur(100px);
+      background-size: cover; /* It covers a web page */
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
+  </style> -->
 
-    /* チェックボックスがチェックされたとき、画像を表示する */
-    #toggleCheckbox:checked + #hiddenImage {
-      display: block;
-    }
-  </style>
 </head>
 <body>
-  <label for="toggleCheckbox">Click to Show Image</label>
-  <input type="checkbox" id="toggleCheckbox">
-  <img id="hiddenImage" src="your-image-url.jpg" alt="Hidden Image">
-</body>
+  <div>
+    <img style="width:100%; height:100%;"  src="../img/HTML-404-Page-with-SVG.png">
+    <!-- <button onclick="back()">Go Back</button>
+      
+    <script>
+      function back() {
+        window.history.back();
+      }
+    </script> -->
+  </div>
 
-この例では、<input type="checkbox" id="toggleCheckbox">がクリックされると、
-その後の #toggleCheckbox:checked + #hiddenImage のセレクタでスタイルが変更され、画像が表示されます。
-ラベル (<label>)は for 属性を使って、ユーザーがクリックすると対応するチェックボックスがトグルされるようにしています。
+</body>
+</html>
+
+
