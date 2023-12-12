@@ -35,13 +35,21 @@ body {
   padding: 1rem 2rem;
 }
 
+main {
+  margin: 20px;
+}
+
+main h1{
+  margin-left: 30px;
+}
+
 .menu {
   display: flex;
   font-size: 20px;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 100px
+  gap: 100px;
 }
 
 .menu a {

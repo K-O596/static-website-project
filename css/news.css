@@ -1,6 +1,7 @@
 .news-box {
     display: flex;
     margin: 40px;
+    padding: 20px;
     gap: 30px;
     width: calc(100vw - 80px);
     height: 250px;
