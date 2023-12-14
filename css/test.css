@@ -1,15 +1,13 @@
-:root { 
-    --color1: red !important;
-    --color1: yellow;
-
-    --color2: red;
-    --color2: blue;
+input::placeholder {
+  color: red;
+  font-size: 1.2em;
+  font-family: "Papyrus";
 }
 
-div h1{
-    color: var(--color1);
+.textbox {
+  overflow-x: hidden; 
 }
 
-div h2{
-    color: var(--color2);
+.textbox img {
+  width: 300;
 }

@@ -1,13 +1,8 @@
-
-
-/* content section */
 .content {
   display: flex;
   overflow-y: auto;
   gap: 3rem;
   padding: 2rem 4rem;
-  /* height = vh - nav padding - logo font size - footer height */
-  height: calc(100vh - 2rem - 1.5rem - 200px);
 }
 
 .contact-form {
