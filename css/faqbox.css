@@ -11,8 +11,8 @@ main p {
   overflow-y: auto;
   gap: 30px;
   padding: 50px;
-  text-align: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .accordion {
@@ -24,13 +24,18 @@ main p {
 }
 
 .accordion-header {
+  font-size: 32px;
   cursor: pointer;
   padding: 1rem;
+  border-style: solid;
+  border-color: black;
 }
 
 .accordion-content {
   display: none;
   padding: 2rem;
+  border-style: solid;
+  border-color: black;
 }
 
 .accordion-content.show {

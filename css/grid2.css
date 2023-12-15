@@ -40,26 +40,11 @@
 
 
 /* move an img to left side and etc... */
-.gallery-left {
-    flex: 1;
-    display: grid;
-    height: min-content;
-    grid-gap: 1rem;
-    grid-template-rows: 50px auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin:30px;
-}
-
-.gallery-left h1, .gallery-left p {
-    margin-bottom: 20px;
-    grid-column: 3 / -1;
-}
 
 .gallery-left a {
-    margin-bottom: 20px;
-    grid-column: 1 / 3;
-    grid-row: 1 / -1;
-    cursor: pointer;
+    float: left;
 }
+
+
 
 

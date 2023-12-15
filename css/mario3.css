@@ -1,10 +1,10 @@
 .mario {
+    position: absolute;
     max-height: 200px;
     max-width: 200px;
     transition: transform 0.3s ease;
-    margin-top: 205px;
-    margin-bottom: 0px;
-    margin-left: 90px;
+    top: 205px;
+    left: 605px;
     justify-content: center;
     text-align: center;
 }
@@ -21,7 +21,9 @@
 }
 
 .pipe {
-    margin-top: -205px;
+    position: absolute;
+    top: 200px;
+    left: 520px;
     z-index: 2;
 }
 
