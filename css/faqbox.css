@@ -28,16 +28,58 @@ main p {
   cursor: pointer;
   padding: 1rem;
   border-style: solid;
-  border-color: black;
+  border-color: gray;
+  border-radius: 5px;
 }
 
 .accordion-content {
   display: none;
   padding: 2rem;
   border-style: solid;
-  border-color: black;
+  border-color: gray;
+  border-radius: 5px;
 }
 
+/* animation */
 .accordion-content.show {
   display: block;
+}
+
+/* contact part */
+.contact-us {
+  flex: 1;
+  display: grid;
+  height: min-content;
+  grid-gap: 1rem;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="text"] {
+  grid-column: 1 / -1;
+}
+
+input[type="email"] {
+  grid-column: 1 / -1;
+}
+
+textarea {
+  grid-column: 1 / -1;
+  resize: none;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  grid-column: 4 / -1;
 }
