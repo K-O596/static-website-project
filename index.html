@@ -9,11 +9,30 @@
         <link rel="stylesheet" href="./css/news.css">
 
         <style>
+            /* Change img when hover a bog. */
             #toby-fox:hover {
                 content: url('./img/Temmie_Sprite.webp');
             }
+
+            /* It hide animation to mobile and tablet. */
+            @media screen and (max-width: 600px) {
+                body {
+                    .pipe-box {
+                        display:none;
+                    }
+                }
+            }
+            @media screen and (min-width: 601px) and (max-width: 1024px) {
+                body {
+                    .pipe-box {
+                        display:none;
+                    }
+                }
+            }
+
         </style>
 
+        <!-- Change animation if can't use JavaScript. -->
         <noscript>
             <style>
                 .pipe-box:hover .mario{
@@ -153,14 +172,14 @@
         <footer class="white bkblack">
             <span>Contact us</span><br>
             <span style="display: block; font-size: 20px;">mail:2iroquoispliskin@gmail.com</span>
-            <a href="">
+            <a href="./pages/404.html">
                 <img style="display: inline;" class="icon" src="./img/twitter.png">
             </a>
-            <a href="">
+            <a href="./pages/404.html">
                 <img style="display: inline;" class="icon" src="./img/instagram.png">
             </a>
 
-            <img class="icon" id="toby-fox" style="margin-left: 20px;" src="./img/toby-fox.gif">
+            <img class="icon" id="toby-fox" style="margin-left: 20px; cursor: none;" src="./img/toby-fox.gif">
 
             <p>Nintendo Switch is a trademark of Nintendo. "PlayStation" and the "PS" Family logo are registered trademarks and "PS4" is a trademark of Sony Interactive Entertainment LLC.</p>
 

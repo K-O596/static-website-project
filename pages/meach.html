@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KSgame</title>
+    <title>Coders Meach</title>
     <link rel="stylesheet"href="../css/main.css">
     <link rel="stylesheet"href="../css/news.css">
+
+    <style>
+    @keyframes turn {
+        0% {
+            transform: translate(0px, 0px);
+        }
+        25% {
+            transform: translate(-100px, -100px);
+        }      
+        50% {
+            transform: translate(-200px, 0px);
+        }
+        75% {
+            transform: translate(-100px, 100px);
+        }
+        100% {
+            transform: translate(0px, 0px);
+        }
+    }
+    
+    
+    #toby-fox.active {
+        animation: turn ease 1.5s infinite;
+    }
+    </style>
 </head>
 <body>
     <div class="nav bkblue">
@@ -13,6 +38,7 @@
             <a href="../index.html">Game</a>
             <a href="#">Meach</a>
             <a href="./gallery.html">About Us</a>
+            <a href="./faq.html">FAQ</a>
         </span>
     </div>
     
@@ -47,15 +73,43 @@
                     <strong> </strong>
                 </div>
 
-                https://www.goodsmile.info/en/product/11937/Shiro+Yuu+Kamiya+Art+Works.html
 
             </div>
+
+            <div class="news-box">
+
+                <div class="news-box-container">
+                    <a href="https://www.goodsmile.info/en/product/11937/Shiro+Yuu+Kamiya+Art+Works.html">
+                        <img src="../img/d906d283d5b1755c1a9c326c2b1e6796.webp">
+                    </a>
+                    <strong> </strong>
+                </div>
         </main>
 
     <footer class="white bkblack">
+        <span>Contact us</span><br>
+        <span style="display: block; font-size: 20px;">mail:2iroquoispliskin@gmail.com</span>
+        <a href="./pages/404.html">
+            <img style="display: inline;" class="icon" src="../img/twitter.png">
+        </a>
+        <a href="./pages/404.html">
+            <img style="display: inline;" class="icon" src="../img/instagram.png">
+        </a>
+
+        <img class="icon" id="toby-fox" style="margin-left: 20px; cursor: pointer;" src="../img/toby-fox.gif">
         <p>Nintendo Switch is a trademark of Nintendo. "PlayStation" and the "PS" Family logo are registered trademarks and "PS4" is a trademark of Sony Interactive Entertainment LLC.</p>
 
         <p>Privacy Policy</p>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tobyFox = document.querySelector("#toby-fox");
+
+                tobyFox.addEventListener("click", function () {
+                    tobyFox.classList.toggle("active");
+                });
+            });
+        </script>
     </footer>
 </body>
 </html>

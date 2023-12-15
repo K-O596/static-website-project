@@ -1,0 +1,38 @@
+main {
+  font-family: sans-serif;
+}
+
+main p {
+  font-size: 24px;
+}
+
+.faq-box {
+  display: flex;
+  overflow-y: auto;
+  gap: 30px;
+  padding: 50px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.accordion {
+  display:block;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.accordion-content {
+  display: none;
+  padding: 2rem;
+}
+
+.accordion-content.show {
+  display: block;
+}

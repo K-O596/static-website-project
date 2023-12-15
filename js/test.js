@@ -1,7 +1,12 @@
-getComputedStyle(document.documentElement).getPropertyValue(
-  "--my-variable-name"
-);
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionItems = document.querySelectorAll(".accordion-item");
 
-var myElement = document.getElementById("myElement");
+  accordionItems.forEach((item) => {
+    const header = item.querySelector(".accordion-header");
 
-myElement.style.backgroundColor = --my - variable - name;
+    header.addEventListener("click", function () {
+      const content = item.querySelector(".accordion-content");
+      content.classList.toggle("show");
+    });
+  });
+});

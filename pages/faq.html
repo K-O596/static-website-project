@@ -5,39 +5,84 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gallery</title>
         <link rel="stylesheet" href="../css/main.css" />
-        <link rel="stylesheet" href="../css/grid.css" />
+        <link rel="stylesheet" href="../css/faqbox.css" />
+
+        <style>
+
+            #toby-fox {
+                display: none;
+            }
+            #toby-fox.active {
+                display: block;
+            }
+        </style>
     </head>
     <body>
-        <div class="nav bkblue">
-            <span class="menu">
-                <a href="../index.html">Game</a>
-                <a href="./meach.html">Meach</a>
-                <a href="./gallery.html">About Us</a>
-                <a href="#">FAQ</a>
-            </span>
-        </div>
-        <div class="content">
-            <form action="" class="contact-form">
-                <h2>Contact Us</h2>
-                <input type="text" id="name" name="name" required placeholder="Name">
-                <input type="email" id="email" name="email" required placeholder="Email">
-                <textarea id="message" name="message" rows="4" required placeholder="Message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        <header>
+            <div class="nav bkblue">
+                <span class="menu">
+                    <a href="../index.html">Game</a>
+                    <a href="./meach.html">Meach</a>
+                    <a href="./gallery.html">About Us</a>
+                    <a href="#">FAQ</a>
+                </span>
+            </div>
+        </header>
+
+        <main>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Q.My game is too difficult!
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                        A.Check our community site for tips and support!<a href="404.html">"Click here!"</a>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        How do I install mods?
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                        Content for section 2 goes here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
         <footer class="white bkblack">
             <span>Contact us</span><br>
             <span style="display: block; font-size: 20px;">mail:2iroquoispliskin@gmail.com</span>
-            <a href="">
+            <a href="./pages/404.html">
                 <img style="display: inline;" class="icon" src="../img/twitter.png">
             </a>
-            <a href="">
+            <a href="./pages/404.html">
                 <img style="display: inline;" class="icon" src="../img/instagram.png">
             </a>
     
+            <img class="icon" id="temmie" style="margin-left: 20px; float: right;" src="../img/Temmie_Sprite.webp">
+            <img class="icon" id="toby-fox" style="float: right" src="../img/toby-fox.gif">
             <p>Nintendo Switch is a trademark of Nintendo. "PlayStation" and the "PS" Family logo are registered trademarks and "PS4" is a trademark of Sony Interactive Entertainment LLC.</p>
     
             <p>Privacy Policy</p>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tobyFox = document.querySelector("#toby-fox");
+                const Temmie = document.querySelector("#temmie");
+                console.log("a");
+
+                Temmie.addEventListener("mouseenter", function () {
+                    tobyFox.classList.toggle("active");
+                });
+            });
+        </script>
     </body>
 </html>

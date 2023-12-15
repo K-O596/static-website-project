@@ -1,13 +1,23 @@
-input::placeholder {
-  color: red;
-  font-size: 1.2em;
-  font-family: "Papyrus";
+body {
+  font-family: Arial, sans-serif;
 }
 
-.textbox {
-  overflow-x: hidden; 
+.accordion-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
 }
 
-.textbox img {
-  width: 300;
+.accordion-header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-content.show {
+  display: block;
 }
