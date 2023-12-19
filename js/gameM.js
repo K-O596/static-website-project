@@ -1,45 +1,50 @@
-// モンティ・ホール問題のシミュレーションゲーム
+// Monty holl problem
 
 function Game() {
-  // ドアの数
+  // boxes
   const boxes = 3;
 
-  // 正解のドアをランダムに選択
+  // randam boxes
   const correctBox = Math.floor(Math.random() * boxes) + 1;
   console.log(correctBox);
-  console.log("3つのドアがあります。どのドアを選びますか？");
+  console.log("choose a 1,2 or 3 box.");
 
-  // プレイヤーが最初に選ぶドア
-  const playerChoice = parseInt(
-    prompt("1, 2, 3のいずれかのドアを選んでください:"),
-    10
-  );
+  // player choise
+  const playerChoice = parseInt(prompt("choose a 1, 2 or 3 box.:"), 10);
+  console.log(playerChoice);
 
-  // ホストが開けるドアをランダムに選択
-  let hostOpenBox;
-  do {
-    hostOpenBox = Math.floor(Math.random() * boxes) + 1;
-  } while (hostOpenBox === correctBox || hostOpenBox == playerChoice);
-
-  console.log(`ホストがドア${hostOpenBox}を開けました。`);
-
-  // プレイヤーに選択を変更するか尋ねる
-  const changeChoice = confirm("ドアを変更しますか？");
-
-  // プレイヤーの最終的な選択
-  const finalChoice = changeChoice
-    ? 6 - playerChoice - hostOpenBox
-    : playerChoice;
-
-  console.log(`最終的な選択はドア${finalChoice}です。`);
-
-  // 結果を表示
-  if (finalChoice == correctBox) {
-    console.log("おめでとうございます！正解です！");
+  if (playerChoice == 0) {
+    console.log("Fisish it!");
   } else {
-    console.log(`残念！正解はドア${correctBox}でした。`);
+    let hostOpenBox;
+    do {
+      hostOpenBox = Math.floor(Math.random() * boxes) + 1;
+    } while (hostOpenBox === correctBox || hostOpenBox == playerChoice);
+
+    console.log(`The host opened box ${hostOpenBox}.`);
+
+    // a chance of changing the choise
+    const changeChoice = confirm("Do you change the choice");
+
+    // finalchoice
+    const finalChoice = changeChoice
+      ? 6 - playerChoice - hostOpenBox
+      : playerChoice;
+
+    console.log(`Final choice is ${finalChoice}.`);
+
+    // result
+    if (finalChoice == correctBox) {
+      console.log("Conglaturation！You win！");
+    } else {
+      console.log(`faild. correct box is ${correctBox}`);
+    }
   }
 }
 
-// ゲームを実行
-Game();
+function handleButtonClick() {
+  // game start
+  Game();
+}
+
+document.getElementById("start").addEventListener("click", handleButtonClick);

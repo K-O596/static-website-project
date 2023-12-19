@@ -4,6 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coders True Gallery</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+        .flex {
+            display: flex;
+            gap: 30px;
+            padding: 50px;
+            justify-content: space-evenly;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .treasure-box {
+                width: 50px;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+            .treasure-box {
+                width: 75px;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+            .treasure-box {
+                width: 100px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -11,11 +39,19 @@
     </header>
     
     <main class="white bkblack">
-        
+        <div class="flex">
+            <img class="treasure-box" data-box="1" src="../img/treasure-box-close.png">
+            <img class="treasure-box" data-box="2" src="../img/treasure-box-close.png">
+            <img class="treasure-box" data-box="3" src="../img/treasure-box-close.png">
+        </div>
+        <div class="flex">
+            <button id="start">Game Start!</button>
+        </div>
     </main>
 
     <footer>
 
     </footer>
+    <script src="../js/gameM.js"></script>
 </body>
 </html>
