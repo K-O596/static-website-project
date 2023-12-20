@@ -13,6 +13,15 @@
             justify-content: space-evenly;
             clear: both;
         }
+
+        .msg-box{
+            display: flex;
+            width: 80%;
+            overflow-y: auto;
+            border-style: 2px solid;
+            border-color: white;
+            border-radius: 5px;
+        }
         
         @media screen and (max-width: 600px) {
             .treasure-box {
@@ -47,10 +56,13 @@
         <div class="flex">
             <button id="start">Game Start!</button>
         </div>
+        <div class="msg-box-class" id="msg-box-id" data-msg-box="main">
+
+        </div>
     </main>
 
-    <footer>
-
+    <footer class="white bkblack">
+        <img class="icon" style="position:absolute;" data-box="unknown" src="../img/toby-fox.gif">
     </footer>
     <script src="../js/gameM.js"></script>
 </body>

@@ -5,7 +5,7 @@
     transition: transform 0.3s ease;
     top: 205px;
     left: 610px;
-    justify-content: center;
+    justify-content: center; /*it makes item position to center in a row. */
     text-align: center;
 }
 
