@@ -11,7 +11,7 @@
 /* color variables */
 :root {
   --red:red;
-  --green:rgb(36, 129, 35);
+  --green:rgb(92, 229, 0);
   --blue:blue;
   --brown:brown;
   --orange:orange;
@@ -67,19 +67,15 @@ main h1{
 
 .menu a {
   text-decoration: none;
-  color: black;
-}
-
-.menu a:visited {
-  color: rgb(222, 178, 222);
+  color: var(--white);
 }
 
 .menu a:hover {
-  color: rgb(229, 145, 0);
+  color: var(--orange);
 }
 
 .menu a:active {
-  color: rgb(92, 229, 0);
+  color: var(--green);
 }
 
 footer {
@@ -91,13 +87,16 @@ footer {
 footer p {
   text-align: center;
   margin-top: 40px;
-  color: white;
+  color: var(--white);
 }
 
 /* to reset usual style */
 .usual {
   display: block !important;
   text-align: left !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
 }
 
 .icon {

@@ -1,12 +1,10 @@
 .mario {
-    position: absolute;
+    position: absolute;/*it makes item position to center in a row. */
     max-height: 200px;
     max-width: 200px;
     transition: transform 0.3s ease;
     top: 205px;
-    left: 610px;
-    justify-content: center; /*it makes item position to center in a row. */
-    text-align: center;
+    left: 610px; 
 }
 
 .pipe-box:hover .mario{
@@ -35,7 +33,6 @@
     width: 370px;
     height: 506px;
     justify-content: center;
-    text-align: center;
     flex-direction: column;
     flex: 0;
 }

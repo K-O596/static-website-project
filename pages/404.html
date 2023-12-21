@@ -9,34 +9,75 @@
       margin: 0;
       padding: 0;
     }
-  </style>
-  <!-- <style>
-    #err {
-      display:block;
+
+    body {
+      display: flex;
+      text-align: center;
       width: 100%;
-      height: 100%;
+      height: 100vh;
+      flex-direction: column;
+      background-color: black;
+      color: white;
+      font-size: 18px;
     }
 
-    .bg {
-      background-image: url('../img/HTML-404-Page-with-SVG.png');
-      backdrop-filter: blur(100px);
-      background-size: cover; /* It covers a web page */
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+    body a > img {
+      width: 30%;
+      margin-top: 3vh;
     }
-  </style> -->
 
+    button {
+      width:30%;
+      font-size: 18px;
+    }
+
+    .no-script{
+      display: none;
+    }
+  </style>
+
+  <!-- to swich buttons -->
+  <noscript>
+    <style>
+      .on-script{
+        display: none;
+      }
+
+      .no-script {
+        display: block;
+      }
+    </style>
+  </noscript>
+  </noscript>
 </head>
 <body>
-  <img style="width:100%; height:100%;"  src="../img/web-1-520x300.jpg">
-    <!-- <button onclick="back()">Go Back</button>
-      
-    <script>
-      function back() {
-        window.history.back();
-      }
-    </script> -->
+  <div role="fix anchor area">
+    <!-- 404 img file -->
+    <a href="./true-gallery.html">
+      <img src="../img/broken-SOS.jpg">
+    </a>
+  </div>
+  <h1>
+    Welcome to 404 page!
+  </h1>
+  <p>
+    When you click on this emblem, 436 petabytes of data will be downloaded.
+  </p>
+  <!-- go back button -->
+  <div role="replace button in center" style="margin-top: 10px;">
+    <button class="on-script" onclick="goBack()">Go back to a safe site!</button>
 
+    <a role="it works when noscript" class="no-script" href="../index.html">
+      <button>Go back to Home page!</button>
+    </a>
+  </div>
+
+  <script>
+    //go back to before site
+    function goBack() {
+        window.history.back();
+    }
+    </script>
 </body>
 </html>
 
