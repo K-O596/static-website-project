@@ -34,6 +34,17 @@
     .no-script{
       display: none;
     }
+
+    a {
+      font-size: 18px;
+      background-color: lightgray;
+      border-radius: 2px;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+    }
   </style>
 
   <!-- to swich buttons -->
@@ -45,16 +56,17 @@
 
       .no-script {
         display: block;
+        width: 30%;
       }
     </style>
   </noscript>
-  </noscript>
 </head>
 <body>
-  <div role="fix anchor area">
+  <!-- This div replaces anchor area -->
+  <div>
     <!-- 404 img file -->
     <a href="./true-gallery.html">
-      <img src="../img/broken-SOS.jpg">
+      <img alt="This image is dangerous!" src="../img/broken-SOS.jpg">
     </a>
   </div>
   <h1>
@@ -64,14 +76,18 @@
     When you click on this emblem, 436 petabytes of data will be downloaded.
   </p>
   <!-- go back button -->
-  <div role="replace button in center" style="margin-top: 10px;">
-    <button class="on-script" onclick="goBack()">Go back to a safe site!</button>
-
-    <a role="it works when noscript" class="no-script" href="../index.html">
-      <button>Go back to Home page!</button>
-    </a>
+  <div style="margin-top: 10px;">
+    <button class="on-script" onclick="goBack()">
+      Go back to daily life!
+    </button>
   </div>
 
+  <!-- This part works when noscript -->
+  <div style="display:flex; justify-content: center;">
+    <a class="no-script" href="../index.html">
+      Go back to Home page!
+    </a>
+  </div>
   <script>
     //go back to before site
     function goBack() {
