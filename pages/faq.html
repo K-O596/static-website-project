@@ -81,10 +81,10 @@
         <footer class="white bkblack">
             <span>Contact us</span><br>
             <span style="display: block; font-size: 20px;">mail:2iroquoispliskin@gmail.com</span>
-            <a href="./pages/404.html">
+            <a href="../pages/404.html">
                 <img alt="twitter" style="display: inline;" class="icon" src="../img/twitter.png">
             </a>
-            <a href="./pages/404.html">
+            <a href="../pages/404.html">
                 <img alt="instagram" style="display: inline;" class="icon" src="../img/instagram.png">
             </a>
     
@@ -95,5 +95,14 @@
             <p>Privacy Policy</p>
         </footer>
         <script src="../js/accordion.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+            const tobyFox = document.querySelector("#toby-fox");
+            const Temmie = document.querySelector("#temmie");
+          
+            Temmie.addEventListener("mouseenter", function () {
+              tobyFox.classList.toggle("active");
+            });
+          });</script>
     </body>
 </html>

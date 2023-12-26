@@ -1,20 +1,22 @@
 .news-box {
     display: flex;
-    margin: 40px;
     padding: 20px;
     gap: 30px;
-    width: calc(100vw - 80px);
-    height: 250px;
+    width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .news-box-container {
+    display: flex;
     width: 300px;
     font-size: 20px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     object-fit: contain;
+    flex-direction: column;
+    
     /* margin: auto; */
     /*border-style: solid;*/
     /*border-color: black;*/ /*to Debug*/
@@ -29,4 +31,16 @@
 
 .news-box-container:hover {
     scale: 1.1;
+}
+
+@media only screen and (max-width: 399px) {
+    .news-box-container {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    .news-box-container img{
+        max-width: 200px;
+        max-height: 100px;
+    }
 }

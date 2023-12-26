@@ -1,47 +1,83 @@
+.mario-box {
+    display: flex;
+    height: 516px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 .mario {
     position: absolute;/*it makes item position to center in a row. */
     max-height: 200px;
     max-width: 200px;
     transition: transform 0.3s ease;
-    top: 205px;
-    left: 610px; 
-}
-
-.pipe-box:hover .mario{
-    transform: translate(0px,-195px);
+    top: 272px;
     z-index: 1;
-}
-
-
-.blurred-background {
-    background: url('../img/pngtree-game-mario-pole-png-image_654409822.png') center/cover no-repeat;
-    backdrop-filter: blur(100px);
-}
-
-.pipe {
-    position: absolute;
-    top: 200px;
-    left: 520px;
-    z-index: 2;
 }
 
 .pipe-box {
     display: flex;
-    margin-top: 0px;
-    margin-left: 520px;
     margin-bottom: 30px;
+    height: 516px;
     width: 370px;
-    height: 506px;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; 
     flex-direction: column;
-    flex: 0;
 }
 
 
 .pipe-box img {
-    display: flex;
     width: 370px;
-    flex: 0;
-    justify-content: center;
-    text-align: center;
+}
+
+.pipe-box:hover .mario{
+    transform: translate(0px,-195px);
+}
+
+.pipe {
+    position: absolute;
+    top: 266px;
+    z-index: 2;
+}
+
+.blurred-background {
+    background: url('../img/pngtree-game-mario-pole-png-image_654409822.png') center/cover no-repeat;
+}
+
+
+@media only screen and (max-width: 1450px) {
+    .blurred-background {
+        background: url('/')
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .mario-box {
+        width: 108px;
+        height: 280px;
+    }
+    
+    .mario {
+        max-height: 108px;
+        max-width: 108px;
+        top: 190px;
+    }
+
+    .pipe-box {
+        width: 200px;
+        margin-bottom: 16px;
+        height: 280px;
+    }
+
+    .pipe-box:hover .mario{
+        transform: translate(0px,-106px);
+    }    
+    
+    .pipe-box img {
+        width: 200px;
+    }
+
+    .pipe {
+        top: 187px;
+    }
 }

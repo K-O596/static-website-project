@@ -13,18 +13,6 @@
             #toby-fox:hover {
                 content: url('./img/Temmie_Sprite.webp');
             }
-
-            /* It hide animation to mobile and tablet. */
-            @media screen and (max-width: 600px) {
-                body .pipe-box {
-                    display:none;
-                }
-            }
-            @media screen and (min-width: 601px) and (max-width: 1024px) {
-                body .pipe-box {
-                    display:none;
-                }
-            }
         </style>
 
         <!-- Change animation if can't use JavaScript. -->
@@ -39,7 +27,6 @@
                 }
             </style>
         </noscript>
-
     </head>
 
     <body>
@@ -52,13 +39,32 @@
                     <a href="./pages/faq.html">FAQ</a>
                 </span>
             </div>
+
+            <div class="accordion white bkblue">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        Menu
+                    </div>
+                    <div class="accordion-content">
+                        <a href="#">Game</a>
+                        <br>
+                        <a href="./pages/meach.html">Meach</a>
+                        <br>
+                        <a href="./pages/gallery.html">About Us</a>
+                        <br>
+                        <a href="./pages/faq.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <header>
             <div class="blurred-background">
                 <div class="pipe-box" id="pipe" >
-                    <img class="mario" alt="Random Image" id="randomImage" src="./img/201911241201482.png">
                     <img class="pipe" alt="pipe" src="./img/pipe.png">
+                    <div class="mario-box">
+                        <img class="mario" alt="Random Image" id="randomImage" src="./img/201911241201482.png">
+                    </div>
                 </div>
             </div>
         </header>
@@ -67,7 +73,6 @@
             <h1>
                 News and Updates
             </h1>
-            
             <div class="news-box">
                 <div class="news-box-container">
                     <a href="https://www.youtube.com/watch?v=mZTVPV1RxOs">
@@ -97,11 +102,9 @@
                     <strong>Armored Core 6 Physical Soundtrack Will Have More Bonuses.</strong>
                 </div>
             </div>
-            
             <h1>
                 Products
             </h1>
-
             <div class="news-box">
                 <div class="news-box-container">
                     <a href="https://www.nintendo.co.jp/titles/20010000020398">
@@ -132,41 +135,19 @@
                 </div>
             </div>
 
-            <!-- they are parfectry same thing above but element is different -->
-            <table>
-                <tr>
-                    <td>
-                        <a href="https://www.konami.com/mg/archive/mgs_pw/">
-                            <img alt="products image" src="./img/metalGear.jpg">
-                        </a>
-                        <strong> Metal Gear Solid Peace Walker</strong>
-                    </td>
-                    <td>
-                        <a href="https://undertale.com/">
-                            <img alt="products image" src="./img/undertale.jpg">
-                        </a>
-                        <strong> Undertale</strong>
-                    </td>
-                    <td>
-                        <a href="https://aquaplus.jp/uta/oro/">
-                            <img alt="products image" src="./img/715LDhXAZKL.jpg">
-                        </a>
-                        <strong>Utawarerumono</strong>
-                    </td>
-                    <td>
-                        <a href="https://segaretro.org/Mega_Man_X4">
-                            <img alt="products image" src="./img/Mega_Man_X4_PSX.jpg">
-                        </a>
-                        <strong> Mega Man X4</strong>
-                    </td>
-                </tr>
-            </table>
+
 
         </main>
 
         <footer class="white bkblack">
-            <span>Contact us</span><br>
-            <span style="display: block; font-size: 20px;">mail:2iroquoispliskin@gmail.com</span>
+            <span>
+                Contact us
+            </span>
+            <br>
+            <span>
+                mail:2iroquoispliskin@gmail.com
+            </span>
+            <br>
             <a href="./pages/404.html">
                 <img alt="twitter icon" style="display: inline;" class="icon" src="./img/twitter.png">
             </a>
@@ -180,7 +161,7 @@
 
             <p>Privacy Policy</p>
         </footer>
-        <script src="./js/game2.js">
-        </script>
+        <script src="./js/game2.js"></script>
+        <script src="./js/accordion.js"></script>
     </body>
 </html>

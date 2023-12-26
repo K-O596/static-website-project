@@ -10,13 +10,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const tobyFox = document.querySelector("#toby-fox");
-  const Temmie = document.querySelector("#temmie");
-  console.log("a");
-
-  Temmie.addEventListener("mouseenter", function () {
-    tobyFox.classList.toggle("active");
-  });
-});
