@@ -60,7 +60,8 @@
     .mario {
         max-height: 108px;
         max-width: 108px;
-        top: 190px;
+        top: -47px;
+        position: relative;
     }
 
     .pipe-box {
@@ -78,6 +79,7 @@
     }
 
     .pipe {
-        top: 187px;
+        top: 115px;
+        position: relative;
     }
 }

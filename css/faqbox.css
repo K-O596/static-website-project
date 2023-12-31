@@ -6,7 +6,7 @@ main p {
   font-size: 24px;
 }
 
-.faq-box {
+main > .faq-box {
   display: flex;
   overflow-y: auto;
   gap: 30px;
@@ -15,15 +15,15 @@ main p {
   flex-direction: column;
 }
 
-.accordion {
+main > .faq-box > .accordion {
   display:block;
 }
 
-.accordion-item {
+main > .faq-box > .accordion > .accordion-item {
   margin-bottom: 10px;
 }
 
-.accordion-header {
+main > .faq-box > .accordion > .accordion-item > .accordion-header {
   font-size: 32px;
   cursor: pointer;
   padding: 1rem;
@@ -32,7 +32,7 @@ main p {
   border-radius: 5px;
 }
 
-.accordion-content {
+main > .faq-box > .accordion > .accordion-item > .accordion-content {
   display: none;
   padding: 2rem;
   border-style: solid;
@@ -41,7 +41,7 @@ main p {
 }
 
 /* animation */
-.accordion-content.show {
+main > .faq-box > .accordion > .accordion-item > .accordion-content.show {
   display: block;
 }
 
@@ -82,4 +82,20 @@ button[type="submit"] {
   display: inline-block;
   transition: background-color 0.3s ease;
   grid-column: 4 / -1;
+}
+
+@media only screen and (max-width: 399px) {
+  main p {
+    font-size: 12px;
+  }
+
+  main > .faq-box {
+    padding: 10px;
+
+  }
+
+  main > .faq-box > .accordion > .accordion-item > .accordion-header, main > .faq-box > .accordion > .accordion-item > .accordion-content {
+    font-size: 12px;
+    padding: 10px;
+  }
 }

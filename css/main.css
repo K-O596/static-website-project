@@ -35,7 +35,7 @@ body {
 
 body h1 {
   margin-top: 30px;
-  text-align: center
+  margin-left: 30px;
 }
 
 /* Color tags*/
@@ -55,10 +55,6 @@ body h1 {
 
 main {
   padding: 20px;
-}
-
-main h1{
-  margin-left: 30px;
 }
 
 .menu {
@@ -110,12 +106,6 @@ footer p {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 399px) {
-  html {
-    font-size: 12px;
-  }
-}
-
 /*swith nav by accodion.js*/
 nav .accordion {
   display: none;
@@ -127,40 +117,55 @@ nav .accodion-content a {
 }
 
 @media only screen and (max-width: 399px) {
+  html {
+    font-size: 12px;
+  }
+
+  body h1 {
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center
+  }
+
   nav .nav {
       display: none;
   }
 
   nav .accordion {
       display: block;
-      text-decoration: none;
+      font-size: 20px;
   }
 
-  nav .accordion-item {
+  nav > .accordion > .accordion-item {
       position: relative;
       text-align: center;
       text-decoration: none;
   }
 
-  nav .accordion-header {
+  nav > .accordion > .accordion-item > .accordion-header {
       text-align: center;
       text-decoration: none;
   }
 
-  nav .accordion-content {
+  nav > .accordion > .accordion-item > .accordion-content {
       display: none;
       text-align: center;
       text-decoration: none;
       color: white;
   }
 
-  nav .accodion-content:visited a {
+  nav > .accordion > .accordion-item > .accodion-content:visited a {
       color:var(--orange);
   }
 
-  nav .accordion-content.show {
+  nav > .accordion > .accordion-item > .accordion-content.show {
       display: block;
       text-decoration: none;
       color: white;
+  }
+
+  nav > .accordion > .accordion-item > .accordion-content > a {
+    text-decoration: none;
+    color: var(--white);
   }
 }
