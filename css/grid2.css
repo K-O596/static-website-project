@@ -1,8 +1,7 @@
 /* Create a main area */
 .gallery {
     display: block;
-    --fp: "Papyrus";
-    font-family: var(--fp);
+    font-family: sans-serif;
 }
 
  /* resize paragraphs */
@@ -19,18 +18,21 @@
     grid-template-rows: 50px auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin:30px;
+    --fp: "Papyrus";
+    font-family: var(--fp);
 }
 
 .gallery-right h1, .gallery-right p {
     margin-bottom: 20px;
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
 }
 
 .gallery-right a {
-    margin-bottom: 20px;
-    grid-column: 5 / -1;
+    grid-column: 4 / -1;
     grid-row: 1 / -1;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* genelate texts by the img */
@@ -41,10 +43,24 @@
 
 /* move an img to left side and etc... */
 
+.gallery-left {
+    display: grid;
+    height: min-content;
+    grid-gap: 1rem;
+    grid-template-rows: 50px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin:30px;
+}
 .gallery-left a {
-    float: left;
+    margin-bottom: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    cursor: pointer;
 }
 
-
+.gallery-left h1, .gallery-left p {
+    margin-bottom: 20px;
+    grid-column: 2 / -1;
+}
 
 

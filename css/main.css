@@ -33,11 +33,6 @@ body {
   width: 100%;
 }
 
-body h1 {
-  margin-top: 30px;
-  margin-left: 30px;
-}
-
 /* Color tags*/
 .red {color: var(--red);} .bkred {background-color:var(--red);}
 .green {color: var(--green);} .bkgreen {background-color:var(--green);}
@@ -145,6 +140,7 @@ nav .accodion-content a {
   nav > .accordion > .accordion-item > .accordion-header {
       text-align: center;
       text-decoration: none;
+      padding: 0.5rem;
   }
 
   nav > .accordion > .accordion-item > .accordion-content {
@@ -167,5 +163,7 @@ nav .accodion-content a {
   nav > .accordion > .accordion-item > .accordion-content > a {
     text-decoration: none;
     color: var(--white);
+    line-height: 2;
+    
   }
 }
