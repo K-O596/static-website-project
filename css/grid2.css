@@ -27,19 +27,12 @@
     grid-column: 1 / 4;
 }
 
-.gallery-right a {
+.dogs {
     grid-column: 4 / -1;
     grid-row: 1 / -1;
-    cursor: pointer;
     margin-left: auto;
     margin-right: auto;
 }
-
-/* genelate texts by the img */
-.gallery-right h1 + a:hover::after{
-    content: "Click!";
-}
-
 
 /* move an img to left side and etc... */
 
