@@ -11,9 +11,7 @@
 
 /* move an img to right side and etc...*/
 .gallery-right {
-    flex: 1;
     display: grid;
-    height: min-content;
     grid-gap: 1rem;
     grid-template-rows: 50px auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -38,7 +36,6 @@
 
 .gallery-left {
     display: grid;
-    height: min-content;
     grid-gap: 1rem;
     grid-template-rows: 50px auto;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -54,6 +51,60 @@
 .gallery-left h1, .gallery-left p {
     margin-bottom: 20px;
     grid-column: 2 / -1;
+}
+
+.sDogs {
+    display: none;
+}
+
+@media only screen and (max-width: 849px) {
+    .gallery p {
+        font-size: 16px
+    }
+
+    .gallery-right {
+        display: flex;
+        --fp: "Papyrus";
+        font-family: var(--fp);
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .dogs {
+        display: none;
+    }
+
+    .sDogs{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sDogs img{
+        max-width: 220px;
+    }
+    
+    .gallery-left {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .gallery-left a {
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .gallery-left img {
+        max-width: 220px;
+    }
+    
 }
 
 
